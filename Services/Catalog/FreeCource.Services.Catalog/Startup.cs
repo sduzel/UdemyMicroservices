@@ -1,5 +1,6 @@
 using FreeCource.Services.Catalog.Services;
 using FreeCource.Services.Catalog.Settings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -41,6 +42,12 @@ namespace FreeCource.Services.Catalog
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "FreeCource.Services.Catalog", Version = "v1" });
             });
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
+            {
+                options.Authority = Configuration["IdentityServerURL"];
+                options.Audience = "resource_catalog";
+                options.RequireHttpsMetadata = false;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -54,7 +61,7 @@ namespace FreeCource.Services.Catalog
             }
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
