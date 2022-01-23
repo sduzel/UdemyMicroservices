@@ -22,6 +22,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FreeCource.IdentityServer", "IdentityServer\FreeCource.IdentityServer\FreeCource.IdentityServer.csproj", "{1F56DB3D-F7D9-490B-835A-62A812E235D9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStock", "PhotoStock", "{6F793D4A-0B14-4F2B-9421-9479C3177659}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreeCourse.Service.PhotoStock", "Services\PhotoStock\FreeCourse.Service.PhotoStock\FreeCourse.Service.PhotoStock.csproj", "{09F843D6-90E7-425C-96E0-F32FA596F9EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +44,10 @@ Global
 		{1F56DB3D-F7D9-490B-835A-62A812E235D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F56DB3D-F7D9-490B-835A-62A812E235D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F56DB3D-F7D9-490B-835A-62A812E235D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F843D6-90E7-425C-96E0-F32FA596F9EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F843D6-90E7-425C-96E0-F32FA596F9EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F843D6-90E7-425C-96E0-F32FA596F9EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F843D6-90E7-425C-96E0-F32FA596F9EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -49,6 +57,8 @@ Global
 		{5F7457A2-9AC6-410B-8848-3491EACD085B} = {84AE3686-48D3-43FD-A1F5-B5DEA0D86BD5}
 		{C13A7BBC-699F-492D-BED2-20E3D11D7C9F} = {6035296A-76A6-4F23-9972-08B28AF5F9CA}
 		{1F56DB3D-F7D9-490B-835A-62A812E235D9} = {BD0A3063-1249-4BB9-94DB-BA28BF9528AE}
+		{6F793D4A-0B14-4F2B-9421-9479C3177659} = {9AE3C8CC-EDFD-4D68-97F8-25BEE1590B01}
+		{09F843D6-90E7-425C-96E0-F32FA596F9EF} = {6F793D4A-0B14-4F2B-9421-9479C3177659}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C81F621-9294-48F6-ADCB-D3EB58219844}

@@ -1,2 +1,4 @@
 Services
--Catalog.API = http://localhost:5011
+	-Catalog.API = http://localhost:5011
+	-PhotoStock.API = http://localhost:5012
+IdentityServer = http://localhost:5001
