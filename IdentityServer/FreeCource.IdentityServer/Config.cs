@@ -15,6 +15,7 @@ namespace FreeCource.IdentityServer
         {
             new ApiResource("resource_catalog"){ Scopes = {"catalog_fullpermission" } },
             new ApiResource("resource_photo_stock"){ Scopes = { "photos_stock_fullpermission" } },
+            new ApiResource("resource_basket"){ Scopes = { "basket_fullpermission" } },
             new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -30,6 +31,7 @@ namespace FreeCource.IdentityServer
         {
             new ApiScope("catalog_fullpermission","CatalogAPI için full erişim"),
             new ApiScope("photos_stock_fullpermission","PhotoStockAPI için full erişim"),
+            new ApiScope("basket_fullpermission","BasketAPI için full erişim"),
             new ApiScope(IdentityServerConstants.LocalApi.ScopeName)
         };
 
@@ -52,6 +54,7 @@ namespace FreeCource.IdentityServer
                 ClientSecrets = { new Secret("secret".Sha256())},
                 AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
                 AllowedScopes = {
+                    "basket_fullpermission",
                     IdentityServerConstants.StandardScopes.Email, 
                     IdentityServerConstants.StandardScopes.OpenId, 
                     IdentityServerConstants.StandardScopes.Profile,
